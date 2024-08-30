@@ -8,7 +8,10 @@ const swaggerSpecs = {
     "servers": [
         {
             "url": "http://localhost:3000",
-        }
+        },
+        {
+            "url": "https://ecommerce-flipzon.onrender.com",
+        },
     ],
     "components": {
         "schemas": {
