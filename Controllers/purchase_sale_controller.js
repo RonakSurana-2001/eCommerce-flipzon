@@ -14,7 +14,7 @@ const createSale = async (req, res) => {
         res.status(201).send({
             success: true,
             message: "Item Added for sale",
-            data: req.body
+            sale
         })
     } catch (err) {
         await session.abortTransaction();
