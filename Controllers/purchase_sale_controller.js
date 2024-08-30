@@ -57,6 +57,13 @@ const purchaseItem = async (req, res) => {
                 message: "Sale not active"
             })
         }
+        if(quantity>5){
+            await session.abortTransaction();
+            session.endSession();
+            return res.status(400).send({
+                message: "Can order MAX 5 Items"
+            })
+        }
         if (sale.quantity < quantity) {
             await session.abortTransaction();
             session.endSession();
