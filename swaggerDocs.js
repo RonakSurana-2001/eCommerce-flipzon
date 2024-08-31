@@ -239,7 +239,7 @@ const swaggerSpecs = {
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "$ref": "#/components/schemas/saleModelGet"
+                                    "$ref": "#/components/schemas/saleModelGetResponse"
                                 }
                             }
                         }
